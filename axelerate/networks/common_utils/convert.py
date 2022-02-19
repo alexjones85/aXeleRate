@@ -231,3 +231,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     converter = Converter(args.converter_type, args.backend, args.dataset_path)
     converter.convert_model(args.model_path)
+
+
+# aXeleRate/axelerate/networks/common_utils/convert.py -m pascal_20_detection/pascal_model/2022-01-30_17-29-06/yolo_best_recall.tflite
+# OSError: SavedModel file does not exist at: pascal_20_detection/pascal_model/2022-01-30_17-29-06/yolo_best_recall.tflite/{saved_model.pbtxt|saved_model.pb}

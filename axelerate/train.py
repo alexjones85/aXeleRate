@@ -180,3 +180,5 @@ if __name__ == '__main__':
     args = argparser.parse_args()
     setup_training(config_file=args.config)
     shutil.rmtree("logs", ignore_errors=True)
+
+    # python axelerate/train.py -c configs/raccoon_detector.json
